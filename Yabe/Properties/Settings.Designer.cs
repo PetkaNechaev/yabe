@@ -12,7 +12,7 @@ namespace Yabe.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "10.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -169,7 +169,7 @@ namespace Yabe.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("128")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public decimal DefaultSourceAddress {
             get {
                 return ((decimal)(this["DefaultSourceAddress"]));
@@ -313,7 +313,7 @@ namespace Yabe.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Structured")]
+        [global::System.Configuration.DefaultSettingValueAttribute("List")]
         public global::Yabe.AddressTreeViewType Address_Space_Structured_View {
             get {
                 return ((global::Yabe.AddressTreeViewType)(this["Address_Space_Structured_View"]));
@@ -572,6 +572,54 @@ namespace Yabe.Properties {
             }
             set {
                 this["Vertical_Object_Splitter_Orientation"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("BACnetSCConfig.config")]
+        public string BACnetSCConfigFile {
+            get {
+                return ((string)(this["BACnetSCConfigFile"]));
+            }
+            set {
+                this["BACnetSCConfigFile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Proprietary-properties.csv")]
+        public string Proprietary_Properties_Files {
+            get {
+                return ((string)(this["Proprietary_Properties_Files"]));
+            }
+            set {
+                this["Proprietary_Properties_Files"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Show_Property_Id_Numbers {
+            get {
+                return ((bool)(this["Show_Property_Id_Numbers"]));
+            }
+            set {
+                this["Show_Property_Id_Numbers"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowHighLightFilter {
+            get {
+                return ((bool)(this["ShowHighLightFilter"]));
+            }
+            set {
+                this["ShowHighLightFilter"] = value;
             }
         }
     }

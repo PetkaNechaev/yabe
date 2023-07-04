@@ -1,8 +1,8 @@
 ﻿/**************************************************************************
 *                           MIT License
-* 
+*
 * Copyright (C) 2015 Morten Kvistgaard <mk@pch-engineering.dk>
-*                    Frederic Chaxel <fchaxel@free.fr 
+*                    Frederic Chaxel <fchaxel@free.fr
 *
 * Permission is hereby granted, free of charge, to any person obtaining
 * a copy of this software and associated documentation files (the
@@ -65,7 +65,7 @@ namespace BasicAdviseCOV
             }
             catch { }
 
-        
+
         }
 
         /*****************************************************************************************************/
@@ -118,7 +118,7 @@ namespace BasicAdviseCOV
 
             bacnet_client.Start();    // go
 
-            // Send WhoIs in order to get back all the Iam responses :  
+            // Send WhoIs in order to get back all the Iam responses :
             bacnet_client.OnIam += new BacnetClient.IamHandler(handler_OnIam);
             bacnet_client.WhoIs();
         }

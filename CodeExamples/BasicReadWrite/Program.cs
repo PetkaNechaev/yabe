@@ -1,8 +1,8 @@
 ﻿/**************************************************************************
 *                           MIT License
-* 
+*
 * Copyright (C) 2015 Morten Kvistgaard <mk@pch-engineering.dk>
-*                    Frederic Chaxel <fchaxel@free.fr 
+*                    Frederic Chaxel <fchaxel@free.fr
 *
 * Permission is hereby granted, free of charge, to any person obtaining
 * a copy of this software and associated documentation files (the
@@ -60,19 +60,19 @@ namespace BasicReadWrite
             }
             catch { }
 
-            Console.ReadKey();            
+            Console.ReadKey();
         }
         /*****************************************************************************************************/
         static void StartActivity()
         {
             // Bacnet on UDP/IP/Ethernet
-            // to bind to a specific network interface such as 100.75.35.6 
+            // to bind to a specific network interface such as 100.75.35.6
             // bacnet_client = new BacnetClient(new BacnetIpUdpProtocolTransport(0xBAC0, false, false, 1472, "100.75.35.6"));
             // otherwise the default interface is open ... sometimes OK, sometimes not !
             bacnet_client = new BacnetClient(new BacnetIpUdpProtocolTransport(0xBAC0, false));
 
             // Or Bacnet Ethernet
-            // bacnet_client = new BacnetClient(new BacnetEthernetProtocolTransport("Connexion au réseau local"));          
+            // bacnet_client = new BacnetClient(new BacnetEthernetProtocolTransport("Connexion au réseau local"));
             // Or Bacnet on IPV6, default interface
             // bacnet_client = new BacnetClient(new BacnetIpV6UdpProtocolTransport(0xBAC0));
 
@@ -82,13 +82,13 @@ namespace BasicReadWrite
 
             bacnet_client.Start();    // go
 
-            // Send WhoIs in order to get back all the Iam responses :  
-            bacnet_client.OnIam += new BacnetClient.IamHandler(handler_OnIam);            
-            
+            // Send WhoIs in order to get back all the Iam responses :
+            bacnet_client.OnIam += new BacnetClient.IamHandler(handler_OnIam);
+
             bacnet_client.WhoIs();
 
             /* Optional Remote Registration as A Foreign Device on a BBMD at @192.168.1.1 on the default 0xBAC0 port
-                           
+
             bacnet_client.RegisterAsForeignDevice("192.168.1.1", 60);
             Thread.Sleep(20);
             bacnet_client.RemoteWhoIs("192.168.1.1");

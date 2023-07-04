@@ -62,7 +62,7 @@
     <Compile Include="..\..\Yabe\BACnetTransportIPv6.cs">
       <Link>BACnetTransportIPv6.cs</Link>
     </Compile>
-    <Compile Include="..\..\Yabe\BACnetTransportEthernet.cs">
+    <Compile Include="..\..\Yabe\BacnetTransportEthernet.cs">
       <Link>BACnetTransport.cs</Link>
     </Compile>
     <Compile Include="BacnetActivity.cs" />
@@ -94,7 +94,7 @@
     <Compile Include="Subscription.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

@@ -1,6 +1,6 @@
 ﻿/**************************************************************************
 *                           MIT License
-* 
+*
 * Copyright (C) 2014 Morten Kvistgaard <mk@pch-engineering.dk>
 *
 * Permission is hereby granted, free of charge, to any person obtaining
